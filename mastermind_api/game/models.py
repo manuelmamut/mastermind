@@ -16,9 +16,25 @@ class Game(models.Model):
         (PRO, 'Pro'),
     )
 
+    RED = 'R'
+    GREEN = 'G'
+    YELLOW = 'Y'
+    BLUE = 'B'
+    COLOR = (
+        (RED, 'Red'),
+        (GREEN, 'Green'),
+        (BLUE, 'Blue'),
+        (YELLOW, 'Yellow'),
+    )
+
+
     created = models.DateTimeField(auto_now_add=True)
     codemaker = models.CharField(max_length=100, blank=False, null=False)
     codebreaker = models.CharField(max_length=100, blank=True, null=True)
+    peg_1 = models.CharField(max_length=1, blank=True, null=True, choices = COLOR)
+    peg_2 = models.CharField(max_length=1, blank=True, null=True, choices = COLOR)
+    peg_3 = models.CharField(max_length=1, blank=True, null=True, choices = COLOR)
+    peg_4 = models.CharField(max_length=1, blank=True, null=True, choices = COLOR)
     tries_number = models.IntegerField(choices = DIFICULTY, default = EASY)
     open_game = models.BooleanField(default = True)
  

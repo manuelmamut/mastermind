@@ -3,3 +3,7 @@
 - This CHANGELOG file .
 - README now contains first instructions on installation
 - Game App urls, views, serializers and models
+
+## 0.0.2 - 2018-07-06
+### Added
+- Now you can create a game a select the pegs colors

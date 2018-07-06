@@ -11,4 +11,8 @@ class GameSerializer(serializers.ModelSerializer):
                'codemaker', 
                'codebreaker',
                'tries_number',
+               'peg_1',
+               'peg_2',
+               'peg_3',
+               'peg_4',
                'open_game')

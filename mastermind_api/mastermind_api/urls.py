@@ -16,12 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
+from mastermind_api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     
 #    url(r'^docs/', include_docs_urls(title='MASTEMRIND API', description='API for MASTERMIND')),
-#    url(r'^$', views.api_root),
-    url(r'^', include('game.urls')),
+    url(r'^$', views.api_root),
+    url(r'^', include(('game.urls', 'game'), namespace='game')),
 
 ]
