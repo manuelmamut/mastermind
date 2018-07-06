@@ -7,3 +7,5 @@
 ## 0.0.2 - 2018-07-06
 ### Added
 - Now you can create a game a select the pegs colors
+- Guesses list endpoint is available
+- Mastemrind algorithm is ready to use
