@@ -30,8 +30,13 @@ class Guess(models.Model):
         ordering = ('created',)
 
     def __unicode__(self):
-        return '%s %s %s %s' % (self.peg_1, self.peg_2, self.peg_3, self.peg_4)
+        return '%d' %peg_1
+        #return '%s %s %s %s' % (self.peg_1, self.peg_2, self.peg_3, self.peg_4)
 
     def save(self, *args, **kwargs):
-        game_active = Game.objects.get(id = self.game.id)
+        game_active = Game.objects.filter(id = self.game.id)
+        riddle_list = game_active.values_list('peg_1', 'peg_2', 'peg_3', 'peg_4')
+        guess_list = [self.peg_1, self.peg_2, self.peg_3, self.peg_4]
+        print (riddle_list)
+        print (guess_list)
         super().save(*args, **kwargs)	
