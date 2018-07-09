@@ -7,3 +7,5 @@ To install:
 After clone the repository, in your virtual enviroment run
 
 pip install -r requirements.txt
+
+run migrations
