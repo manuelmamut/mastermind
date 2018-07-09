@@ -13,3 +13,7 @@
 ## 0.0.3 - 2018-07-07
 ### Added
 - List every guess in a game when list or detail endpoints are called
+
+## 0.0.4 - 2018-07-08
+### Added
+- Now we get suggestions after each guess
