@@ -36,7 +36,7 @@ class Guess(models.Model):
     def save(self, *args, **kwargs):
         game_active = Game.objects.filter(id = self.game.id)
         riddle_list = game_active.values_list('peg_1', 'peg_2', 'peg_3', 'peg_4')
+        riddle_list = [i for i in riddle_list[0]]
         guess_list = [self.peg_1, self.peg_2, self.peg_3, self.peg_4]
-        print (riddle_list)
-        print (guess_list)
+        self.white_pegs, self.black_pegs = mastermindAlgorithm(riddle_list, guess_list)
         super().save(*args, **kwargs)	

@@ -25,7 +25,7 @@ SECRET_KEY = 'xo&v_k$zd7+%solw3=_-r+i2pc=gy8=c9d2yy=v7p%vkd%_ees'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['104.131.185.138']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'game',
     'guesses',
+    'utils',
 ]
 
 MIDDLEWARE = [
