@@ -9,3 +9,5 @@ After clone the repository, in your virtual enviroment run
 pip install -r requirements.txt
 
 run migrations
+
+add host to allowed_host to settings.py
