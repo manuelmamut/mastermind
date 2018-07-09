@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.shortcuts import render
+from rest_framework.decorators import authentication_classes, permission_classes
 from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
@@ -8,6 +8,8 @@ from guesses.models import Guess
 from guesses.serializers import GuessesSerializer
 
 
+@authentication_classes([])
+@permission_classes([])
 class GuessesList(generics.ListCreateAPIView):
     """\brief, Class used to handle Game models listing and creation"""
     queryset = Guess.objects.all()
