@@ -17,3 +17,9 @@
 ## 0.0.4 - 2018-07-08
 ### Added
 - Now we get suggestions after each guess
+
+## 0.0.5 - 2018-07-09
+### Change
+- Changes on settings in order to allow the personalization of some variables in each enviroment, 
+specially ALLOWED_HOSTS
+- Now an anonymous user can POST games and guesses
