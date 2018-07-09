@@ -25,7 +25,6 @@ SECRET_KEY = 'xo&v_k$zd7+%solw3=_-r+i2pc=gy8=c9d2yy=v7p%vkd%_ees'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -131,3 +130,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+try:
+    from mastermind_api.settings_dev import *
+except ImportError: 
+    ALLOWED_HOST = ['localhost']
+
