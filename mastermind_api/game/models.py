@@ -20,11 +20,15 @@ class Game(models.Model):
     GREEN = 'G'
     YELLOW = 'Y'
     BLUE = 'B'
+    PURPLE = 'P'
+    ORANGE = 'O'
     COLOR = (
         (RED, 'Red'),
         (GREEN, 'Green'),
         (BLUE, 'Blue'),
         (YELLOW, 'Yellow'),
+        (PURPLE, 'Purple'),
+        (ORANGE, 'Orange'),
     )
 
 
