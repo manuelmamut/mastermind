@@ -32,3 +32,7 @@ specially ALLOWED_HOSTS
 ## 0.0.7 - 2018-07-11
 ### Added
 - Added unittest for the Game and Guesses views and models
+
+## 0.0.8 - 2018-07-11
+### Added
+- Added documentation on /docs
