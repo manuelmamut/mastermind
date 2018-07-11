@@ -18,6 +18,10 @@ After clone the repository, in your virtual enviroment run:
 
 Once the app is running you can check the API documentation in http://<your_host>:<your_port>/docs
 
+## Test:
+
+You can run the tests by going to the project folder 'mastermind_api' and run _python manage.py test_
+
 ## TODO
 
 Since we are not handling sessions we've disabled the authentication and authorization policies 
