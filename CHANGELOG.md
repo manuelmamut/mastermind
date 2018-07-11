@@ -35,4 +35,4 @@ specially ALLOWED_HOSTS
 
 ## 0.0.8 - 2018-07-11
 ### Added
-- Added documentation on /docs
+- Added documentation on http://<your_host>:<your_port>/docs
