@@ -11,7 +11,7 @@ from guesses.serializers import GuessesSerializer
 @authentication_classes([])
 @permission_classes([])
 class GuessesList(generics.ListCreateAPIView):
-    """\brief, Class used to handle Game models listing and creation"""
+    """Class used to handle Guess models listing and creation"""
     queryset = Guess.objects.all()
     serializer_class = GuessesSerializer
 
