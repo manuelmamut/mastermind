@@ -43,9 +43,10 @@ class Guess(models.Model):
         riddle_list = [i for i in riddle_list[0]]
         guess_list = [self.peg_1, self.peg_2, self.peg_3, self.peg_4]
         self.white_pegs, self.black_pegs = mastermindAlgorithm(riddle_list, guess_list)
+        print (self.black_pegs)
         if self.black_pegs == 4:
-            print(game_active[0])
             game_closed = game_active[0]
             game_closed.open_game = False
             game_closed.save()
+            print (game_closed.open_game)
         super().save(*args, **kwargs)	
