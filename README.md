@@ -1,10 +1,10 @@
 # mastermind
 
-###This is an API for the mastermind game
+### This is an API for the mastermind game
 
 Done in Python 3 and Django 1.10
 
-##To install:
+## To install:
 
 After clone the repository, in your virtual enviroment run:
 
@@ -16,7 +16,9 @@ After clone the repository, in your virtual enviroment run:
 
 - add ALLOWED_HOST = ['your_host'] to settings_dev.py
 
-##TODO
+- Once the app is running you can check the APOI documentation in http://<your_host>:<your_port>/docs
+
+## TODO
 
 Since we are not handling sessions we've disabled the authentication and authorization policies 
 in the view classes. We must add User support in order to allow only authenticated users to use the POST endpoints 
