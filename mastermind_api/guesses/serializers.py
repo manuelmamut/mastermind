@@ -22,10 +22,7 @@ class GuessesSerializer(serializers.ModelSerializer):
             max_tries = game.tries_number
             total_guesses = len(Guess.objects.filter(game_id = game.id))
             if total_guesses < max_tries:
-                print(total_guesses, max_tries)
-                print(total_guesses, max_tries-1)
                 if total_guesses == (max_tries - 1):
-                    print('limit')
                     game.open_game = False
                     game.save()
                 return data
