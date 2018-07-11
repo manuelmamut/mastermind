@@ -28,3 +28,7 @@ specially ALLOWED_HOSTS
 ### Added
 - Now every game closes automatically when the maximum number of tries is reached or when the riddle is solved
 - Returns error when trying to guess on a closed game
+
+## 0.0.7 - 2018-07-11
+### Added
+- Added unittest for the Game and Guesses views and models
