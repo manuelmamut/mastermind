@@ -10,13 +10,13 @@ After clone the repository, in your virtual enviroment run:
 
 - pip install -r requirements.txt
 
-- migrations
+- apply the migrations
 
 - create a file named settings_dev.py at the same level of the settings.py file
 
-- add ALLOWED_HOST = ['your_host'] to settings_dev.py
+- add ALLOWED_HOST = ['<your_host>'] to settings_dev.py
 
-Once the app is running you can check the APOI documentation in http://<your_host>:<your_port>/docs
+Once the app is running you can check the API documentation in http://<your_host>:<your_port>/docs
 
 ## TODO
 
