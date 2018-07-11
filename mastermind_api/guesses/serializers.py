@@ -15,6 +15,7 @@ class GuessesSerializer(serializers.ModelSerializer):
                'peg_4',
                'black_pegs',
                'white_pegs')
+        read_only_fields = ('black_pegs', 'white_pegs',)
 
     def validate(self, data):
         """Here we want to validate the number of tries for the specific game

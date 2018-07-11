@@ -11,7 +11,7 @@ from game.serializers import GameSerializer
 @authentication_classes([])
 @permission_classes([])
 class GameList(generics.ListCreateAPIView):
-    """\brief, Class used to handle Game models listing and creation"""
+    """Class used to handle Game models listing and creation"""
     queryset = Game.objects.all()
     serializer_class = GameSerializer
  
@@ -19,6 +19,6 @@ class GameList(generics.ListCreateAPIView):
 @authentication_classes([])
 @permission_classes([])
 class GameDetail(generics.RetrieveAPIView):
-    """\brief, Class used to handle Game models details"""
+    """Class used to handle Game models details"""
     queryset = Game.objects.all()
     serializer_class = GameSerializer
