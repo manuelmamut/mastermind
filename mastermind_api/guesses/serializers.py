@@ -17,6 +17,11 @@ class GuessesSerializer(serializers.ModelSerializer):
                'white_pegs')
 
     def validate(self, data):
+        """Here we want to validate the number of tries for the specific game
+        if more tries than the maximum are intended, then a ValidationError is returned
+        if the total of tries is reached then the game is closed for more tries"""
+
+
         if self.context.get('request').method == 'POST':
             game = Game.objects.get(id = data['game'].id)
             max_tries = game.tries_number

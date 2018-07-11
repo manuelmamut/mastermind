@@ -15,8 +15,6 @@ class GameList(generics.ListCreateAPIView):
     queryset = Game.objects.all()
     serializer_class = GameSerializer
  
-#    def perform_create(self, serializer):
-#        serializer.save(user=self.request.user)
 
 @authentication_classes([])
 @permission_classes([])
